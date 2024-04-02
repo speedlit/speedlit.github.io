@@ -72,6 +72,8 @@ $(document).ready(function(){
     });
 });
 
+ 
+
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
