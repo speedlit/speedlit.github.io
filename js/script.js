@@ -90,6 +90,14 @@ function validateInput() {
 
 
 
+  document.getElementById("trackButton").addEventListener("click", function() {
+    // Redirect to the desired webpage
+    window.location.href = "./shipping.html";
+});
+
+
+
+
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
