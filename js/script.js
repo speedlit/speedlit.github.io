@@ -72,7 +72,23 @@ $(document).ready(function(){
     });
 });
 
- 
+
+
+// Tracking Input Form
+function validateInput() {
+    var userInput = document.getElementById("inputField").value.trim().toUpperCase();
+    if (userInput === "HNERY") {
+      document.getElementById("errorMessage").style.display = "none";
+      document.getElementById("successMessage").style.display = "block";
+      return true; // Allow form submission
+    } else {
+      document.getElementById("errorMessage").style.display = "block";
+      document.getElementById("successMessage").style.display = "none";
+      return false; // Prevent form submission
+    }
+  }
+
+
 
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/

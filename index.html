@@ -77,13 +77,15 @@
                 <p class="tracking__description">Get real-time information on the 
                     status of your package.
                 </p>-->
-                <form action="" class="tracking__form">
-                    <input type="text" placeholder="Tracking number" class="tracking__input">
+                <form id="inputForm" onsubmit="return validateInput()" action="" class="tracking__form">
+                    <input type="text" placeholder="Tracking number" class="tracking__input" id="inputField" required>
                 
                     <div class="button-area">
                         <button type="submit">Tracking</button>
                     </div>
                 </form>
+                <p id="errorMessage" style="color: red; display: none;">Incorrect input.</p>
+                <p id="successMessage" style="color: green; display: none;">Correct input. Form submitted successfully!</p>
             </div>
         </div>
     </section>

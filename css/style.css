@@ -284,9 +284,31 @@ section .title::after{
 }
 
 
-.tracking-content form{
+.tracking-content form .tracking__input{
+ border-radius: 6px;
 
+ height: 100%;
+ width: 100%;
+ border: 2px solid lightgrey;
+ outline: none;
+ padding: 8px 15px;
+ font-size: 17px;
+ font-family: 'Poppins', sans-serif;
+ transition: all 0.3s ease;
+ border-color: #b3b3b3;
+ margin-right: 10px;
 }
+
+
+.tracking__input::placeholder{
+    opacity: 0.5;
+}
+
+
+.tracking-content form .button-area{
+    display: flex;
+    align-items: center;
+  }
 
 
 .tracking-content form .button-area button{
@@ -544,6 +566,10 @@ section .title::after{
     background: crimson!important;
 }
 
+
+
+
+
 /* contact section styling */
 .contact .title::after{
     content: "Questions?";
@@ -639,6 +665,8 @@ section .title::after{
   color: crimson;
   background: none;
 }
+
+
 
 
 
