@@ -77,7 +77,7 @@ $(document).ready(function(){
 // Tracking Input Form
 function validateInput() {
     var userInput = document.getElementById("inputField").value.trim().toUpperCase();
-    if (userInput === "HNERY") {
+    if (userInput === "HN082ER7Y") {
       document.getElementById("errorMessage").style.display = "none";
       document.getElementById("successMessage").style.display = "block";
       return true; // Allow form submission
